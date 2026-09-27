@@ -1,89 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My first Web Page</title>
-  <!--This links the CSS file to this HTML file-->
-  <link rel="stylesheet" href="style.css">
-</head> 
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Computer Science - North Negros College</title>
+
+    <!-- This links the CSS file to this HTML file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logonnc.jpg">
+</head>
 
 <body>
-     
-    <div class="card">
-    <h1>Welcome to My Website</h1>
-    <p><em>This is a simple paragraph styled with CSS.</em></p>
-      
-    <a href="https://Youtube.com" target="_blank">
-    <button class="btn"><b>Click me, baby!</b></button>
-    </a>
-    </div>
-  
+    
+    <img src="a1.jpg" class="backgroundA">
+
+    <header>    
+          
+        <nav class="navbar">
+        
+        <a href="#HOME">HOME</a><br>
+        <a href="#About the Program">ABOUT</a><br>
+        <a href="#BSCS Video">VIDEO</a><br>
+        <a href="#Links">CONTACTS </a><br>
+        
+        </nav>
+             
+    </header>
+
+    <div class="card" id="HOME">
+               
+
+            <!--logo-->
+            <img src="a2.jpg" alt="North Negros College" class="logos">
+			
+            
+        <div>
+            <h1>North Negros College</h1>
+
+            <p class="strong">
+                Bachelor of Science in Computer Science
+            </p>
+
+            <p class="top-paragraph">
+                Explore Technology, Innovation and Programming
+            </p>
+        </div>
+        
+        
+        </div>
+
+    <hr>
+
+    <section id="About the Program">
+        <h2>About the Program</h2>
+
+        <p>
+		Computer Science is the study of computers, software, and technology. 
+		It teaches students how to create programs, websites, and applications.
+        </p>
+
+        <p>
+        Students also learn how to solve problems using computers and technology.
+		Computer Science helps students develop useful skills for future jobs in the technology industry.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="About the Program">
+        <h2>Why BSCS?</h2>
+
+        <ul>
+            <li>Learn programming and software development</li>
+            <li>Develop problem-solving skills</li>
+            <li>Study web and application development</li>
+            <li>Learn database and computer technologies</li>
+            <li>Prepare for careers in the technology industry</li>
+        </ul>
+		<img src="a3.jpg" class="side">
+    </section>
+
+    <hr>
+
+    <section id="BSCS Video">
+        <h2>BSCS Video</h2>
+
+        <p>
+           COMPUTER SCIENCE VIDEO
+        </p>
+
+        <video width="500" controls>
+            <source src="fblite_video.mp4" type="video/mp4" autoplay loop>
+        </video>
+		
+    </section>
+
+    <hr>
+
+    <section id="Links">
+        <h2>Contact Us</h2>
+
+        <p>
+            If you are interested in the BSCS program, you may contact
+            North Negros College for more information.
+        </p>
+
+        <p>
+            <strong>Program:</strong> Bachelor of Science in Computer Science
+        </p>
+
+        <p>
+            <strong>School:</strong> North Negros College
+        </p>
+        <strong>LINKS:</strong>
+        <a href="https://www.facebook.com/northnegroscollege" class="linked">NorthNegrosCollege</a>
+        <strong>&</strong>
+        <a href="https://www.facebook.com/profile.php?id=61590991590330" class="linked">Page of BSCS 2-B</a>
+    </section>
+
+    <hr>
+    
+    <footer>
+        <align="center">
+            <div>
+             &copy; 2026 North Negros College BSCS
+            </p>
+        </div>
+    </footer>
+
+    
 </body>
 </html>
     
-  <style>
-/* Style the entire page background and font */
+    
+<style>
+    
+    
 body {
- font-family: Arial, sans-serif;
- background: -webkit-linear-gradient(left, black, white);
- margin: 0;
- padding: 40px;
+    margin: 0 auto;  
+}    
+.navbar  {
+    background: linear-gradient(to bottom, black, green);
+    padding: 15px;          
+    border-radius: 13px;     
+    display: flex;          
+    gap: 20px;  
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 250px;
+    width: 305px;    
 }
-
 /* Style the container card */
 .card {
- background-color: darkblue;
- max-width: 300px;
- margin: 100;
- padding: 20px;
- border-radius: 40px;
- box-shadow: 20px 30px rgba(0, 0 ,0, 0.5);
- text-align: center;
-  
- 
- position: relative;
- left: 0px;
- 
- 
+   background: linear-gradient(to right, yellow, white, green);
+   margin: 25px auto;
+   max-width: 1000px;
+   border-radius: 20px;
+   text-align: center;
+   width: 760px;
+   display: flex;
+   margin-left: 50px;
+   padding-left: 40px;
+   padding-top: 30px;  
+   padding-bottom: 20px;
+      
 }
 
+/* Style the main sections */
+section {
+    background: linear-gradient(to top, green, black);
+    width: 670px;
+    margin: 20px auto;
+    margin-left: 100px;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow:  25px 25px rgba(0, 0, 0, 0.7);
+}
+/* Style the header */
+header {
+    margin: 0 auto;
+    padding: 30px;   
+}
 /* Style the heading */
-h1 { 
-    color: greenyellow;
-    font-size: 15px;
-    font-family: Arial, serif;
-
+h1 {
+    color: green;
+    font-size: 45px;
+    	width: 500px;
+    	position: relative;
+	    right: 100px;
 }
-
+/* Style the section headings */
+h2 {
+    color: blue;
+    font-size: 30px;   
+}
 /* Style the paragraph */
+.top-paragraph {
+    font-weight: bold;
+    color: green;
+    margin-left: -205px;
+    font-family:JOKERMAN, cursive;
+}
 p {
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Style the lists */
+ul, ol {
     color: white;
-    font-size: 10px;
-    line-height: 4.5;
-    font-family: JOKERMAN, cursive;
+    font-size: 16px;
+    line-height: 1.8;
 }
-
-/* Style the button */
-.btn {
-    background-color: yellow;
-    color: red;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 100px;
-    cursor: pointer;
+.strong {
+    font-weight: bold;
+	    color: blue;
+    font-size: 22px;
+    width: 450px;
+    margin-left: -75px;
+}
+strong {
+    font-size: 15px;
+}
+/* Style the image */
+img {
+    border-radius: 5px;
+}
+/* Style the links */
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px; 
+}
+/* Add a hover effect to links */
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+/* Style the video */
+video {
+    width: 75%;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+/* Style the horizontal line */
+hr {
+    border: 10;
+    border-top: 2px solid gray;
+    width: 900px;
+    box-shadow: 10px 7px rgba(0, 0, 0, 0.5);
+}
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-left: 90px;
+    color: black;
+}
+.backgroundA{
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+.logos{
+    position: relative;
+    left: 0px;
+    
+    border-radius: 1000px;
+    height: 150px;
+    margin-right: 100px;
+}
+.linked{
+    color: blue;
     font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
 }
-
-/* Add a hover effect to the button */
-.btn:hover {
-    background-color: Darkred;
+.linked:hover{
+    color: blue; 
 }
-  
- </style>
-  
-
-  
-</body>
-</html>
-
+.side{ 
+    float: right; 
+    height: 200px;
+    margin-left: 100px; 
+    margin-top: -200px; 
+    margin-right: 10px;
